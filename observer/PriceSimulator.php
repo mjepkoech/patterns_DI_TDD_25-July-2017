@@ -1,9 +1,9 @@
 <?php
-interface Observer {
-    public function addCurrency(Currency $currency);
-}
- 
-class priceSimulator implements Observer {
+namespace observer;
+
+require_once 'Observer.php';
+
+    class PriceSimulator implements Observer {
     private $currencies;
      
     public function __construct() {
@@ -18,5 +18,6 @@ class priceSimulator implements Observer {
         foreach ($this->currencies as $currency) {
             $currency->update();
         }
-    }}
+    }
+}
 ?>

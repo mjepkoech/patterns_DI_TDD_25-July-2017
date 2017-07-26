@@ -1,7 +1,10 @@
 <?php
+namespace tests;
+require_once 'User.php';
+
 use PHPUnit\Framework\TestCase;
  
-class UserTest extends TestCase {
+	class UserTest extends TestCase {
  
     private $user;
  

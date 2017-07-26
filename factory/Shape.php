@@ -1,6 +1,6 @@
 <?php
 //factory design method calcs
-	class shape
+	class Shape
 	{
 		private $shapelength;
 		private $shapewidth;
@@ -18,15 +18,4 @@
 			return $shapearea;
 		}
 	}
-	class shapecalcsfactory
-	{
-		public static function definedimensions($length, $width)
-		{
-			return new shapecalcs($length, $width);
-		}
-	}
-
-	//have the factory define the shapecalcs object and calculate the area
-	$rectangle = shapecalcsfactory::definedimensions(4, 6);
-	print_r($rectangle->getArea());
 ?>
