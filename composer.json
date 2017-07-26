@@ -1,0 +1,8 @@
+{
+    "name": "mine/projects",
+    "description": "Design Patterns Codes",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
